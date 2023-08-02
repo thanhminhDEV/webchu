@@ -1,0 +1,271 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.limit-1 {
+    -webkit-line-clamp: 1;
+}
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+header {
+    position: sticky;
+    top: -10px;
+}
+.container {
+    background-image: url(./image/backrought.jpg);
+    /* height: 1200px; */
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container .nav-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container .nav-bar .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    display: flex;
+}
+.container .nav-bar .navbar-container .nav-logo {
+    width: 234px;
+}
+.container .nav-bar .navbar-container .nav-content {
+    align-items: center;
+    display: flex;
+    width: 854px;
+    justify-content: space-between;
+}
+.container .nav-bar .navbar-container .nav-logo img {
+    width: 234px;
+    height: 80px;
+}
+.container .nav-bar .navbar-container .nav-content .list {
+    gap: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .nav-bar .navbar-container .nav-content .list .item {
+    list-style: none;
+}
+.container .nav-bar .navbar-container .nav-content .list .item a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+.container .nav-bar .navbar-container .nav-content .list .item:last-child {
+    position: relative;
+}
+.container .nav-bar .navbar-container .nav-content .list .item:last-child .num {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 18px;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: red;
+}
+
+.container .nav-bar .navbar-container .nav-content .list .item a:hover {
+    color: aqua;
+    transition: 0.2s ease;
+}
+.container .nav-bar .navbar-container .nav-content .login {
+    display: flex;
+    gap: 25px;
+}
+.container .nav-bar .navbar-container .nav-content .login .btn {
+    border-radius: 999px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    padding: 0 7px;
+    /* line-height: 10px; */
+}
+
+.container .nav-bar .navbar-container .nav-content .login .btn img {
+    width: 14px;
+    margin-right: 7px;
+}
+.container .nav-bar .navbar-container .nav-content .login .btn a {
+    /* padding-top: 10px; */
+    color: #fff;
+    font-weight: 400;
+}
+.container .nav-bar .navbar-container .nav-content .login .btn img:hover {
+    color: aqua;
+}
+/* info */
+.container_info {
+    margin-top: 20px;
+}
+.info-content {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.info-content .left {
+    width: 379px;
+}
+.info-content .left .nav {
+    display: flex;
+    justify-content: space-between;
+}
+.info-content .left .nav .nav-item:nth-child(1) {
+    padding-top: 10px;
+    background: #1d1d1d;
+    width: 70%;
+    text-align: center;
+    height: 41px;
+}
+.info-content .left .nav .nav-item:nth-child(2) {
+    padding-top: 10px;
+    width: 30%;
+    height: 41px;
+    text-align: center;
+    color: #c2c2c2;
+    font-weight: bold;
+    background: #343434;
+}
+.info-content .left .nav .nav-item:nth-child(1) a {
+    font-weight: 700;
+    color: #ff502e;
+}
+.info-content .left .nav .nav-item:nth-child(2) a {
+    font-weight: 700;
+    color: #fff;
+    background: #343434;
+}
+.info-content .left .banner {
+    margin-top: 40px;
+}
+.info-content .left .banner .item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.info-content .left .banner .item .num {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.info-content .left .banner .item .num .num-item {
+    color: #1d1d1d;
+    font-weight: 600;
+    background-color: #0ce3ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.info-content .left .banner .item .num .name {
+    color: #bcb8b1;
+}
+.info-content .left .banner .item .dola {
+    background-color: #ff502e;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 140px;
+}
+.info-content .left .banner .item span {
+    position: relative;
+    color: #080302;
+    font-weight: bold;
+}
+.info-content .left .banner .item span::after {
+    content: "đ";
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: -7px;
+}
+/* nick ff */
+.container-shopff {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container-shopff .heading_lv2 {
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    color: #fff;
+}
+.container-shopff .lines {
+    width: 80px;
+    height: 5px;
+    background-color: #32c5d2;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-shopff .content-shopff .info-shopff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content {
+    margin-top: 10px;
+    width: 24%;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content .image img {
+    padding: 2px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content h3 {
+    padding: 0 20px;
+    margin-top: 22px;
+    text-align: center;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content h3 a {
+    font-size: 16px;
+    color: #efc40f;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content .desc {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+.container-shopff .content-shopff .info-shopff .game-list-content .btn {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-shopff .content-shopff {
+    display: flex;
+}
